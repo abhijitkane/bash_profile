@@ -77,6 +77,10 @@ rb() {
     fi    
 }
 
+pman () {
+    man -t "${1}" | open -f -a /Applications/Preview.app
+}
+
 #---mkdir + cd
 mkcd() {
 	mkdir "$1"
